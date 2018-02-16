@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ComputerCS</title>
+    <link rel="stylesheet" href="styles/w3.css">
+    <link rel="icon" href="" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        a.menuLink {
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            text-align: left;
+            padding-left: 4vw;
+            font-size: 1.7vw;
+            color: #262626;
+            font-family: vazir_bold;
+        }
+        .mySlides {display:none}
+        @font-face {
+            font-family: FiraCode-Light;
+            src: url(fonts/FiraCode-Light.ttf)
+        }
+
+        @font-face {
+            font-family: Yekan;
+            src: url(fonts/Yekan.ttf)
+        }
+
+        @font-face {
+            font-family: vazir_bold;
+            src: url(fonts/vazir/Vazir-Bold-FD-WOL.ttf)
+        }
+
+        @font-face {
+            font-family: vazir;
+            src: url(fonts/vazir/Vazir-FD-WOL.ttf)
+        }
+
+        p.pa {
+            text-align: justify;
+            padding-right: 2vw;
+            padding-left: 2vw;
+            color: #262626;
+            direction: rtl;
+            font-size: 1.5vw;
+            font-family: vazir;
+        }
+
+        p.paHead {
+            text-align: justify;
+            padding-right: 3vw;
+            color: #cc2d29;
+            direction: rtl;
+            padding-top: 5vw;
+            font-size: 1.5vw;
+            font-family: vazir_bold;
+        }
+    </style>
+</head>
+<body style="background-color:white">
+<nav id="navMenu" class="w3-sidenav w3-white" style="width:25%">
+    <a class="menuLink" href="index.html" style="color: #0a457f;text-align: left;padding-left: 2vw"><b style="font-family: FiraCode-Light">switch(chooseCase):</b></a>
+    <a class="menuLink" href="index.html" style="color: #cc2d29"><b style="font-family: FiraCode-Light">case</b> "صفحه اصلی" :</a>
+    <a class="menuLink" href="#intro"><b style="font-family: FiraCode-Light">case</b> "معرفی" :</a>
+    <a class="menuLink" href="#az"><b style="font-family: FiraCode-Light">case</b> "اعضاء" :</a>
+    <a class="menuLink" href="http://computercs.ir/wp/category/blog"><b style="font-family: FiraCode-Light">case</b> "بلاگ" :</a>
+    <a class="menuLink" href="http://computercs.ir/wp/category/college"><b style="font-family: FiraCode-Light">case</b> "کالج" :</a>
+    <a class="menuLink" href="http://computercs.ir/wp/category/match"><b style="font-family: FiraCode-Light">case</b> "مسابقات" :</a>
+    <a class="menuLink" href="http://computercs.ir/wp/category/event"><b style="font-family: FiraCode-Light">case</b> "رویدادها" :</a>
+    <a class="menuLink" href="#insta"><b style="font-family: FiraCode-Light">case "Instagram":</b></a>
+    <!--<a class="menuLink" href="#">لینک</a>-->
+    <a class="menuLink" href="#git"><b style="font-family: FiraCode-Light">case "Git":</b></a>
+    <a class="menuLink" href="#connect"><b style="font-family: FiraCode-Light">case</b> "ارتباط با ما" :</a>
+    <a class="menuLink" href="#" style="padding-left: 2vw"><b style="font-family: FiraCode-Light;color: #0a457f">endswitch;</b></a>
+    <a class="menuLink" href="#"></a>
+</nav>
+<div style="margin-left:25%">
+    <div style="height:1.5vw;background-color: #262626"></div>
+    <table style="text-align: center;border-collapse: collapse;width:100%;background-color: #262626">
+        <tr>
+            <td style="font-size:2.5vw;color:#ffffff;background-color:#262626;font-family:vazir_bold">انجمن علمی
+                دانشجویی علوم و مهندسی کامپیوتر
+            </td>
+        </tr>
+        <tr>
+            <td style="font-size:1vw;font-family:FiraCode-Light;color:#ffffff;background-color:#262626;font-weight: bold;">
+                Student's Scientific Chapter of Computer Science and Engineering
+            </td>
+        </tr>
+        <tr>
+
+            <td style="font-size:1.25vw;color:#ffffff;background-color:#0070c0;"><p
+                    style="font-weight: bold;font-family:FiraCode-Light;display:inline">University of Golestan | </p>
+                <p style="font-family:vazir_bold;display: inline;">دانشگاه گلستان</p></td>
+        </tr>
+    </table>
+
+    <div class="w3-center" style="padding: 2vw">
+        <!--<div class="w3-section">-->
+            <!--<button class="w3-btn" onclick="plusDivs(-1)"><b style="font-family: vazir">❮ قبلی</b></button>-->
+            <!--<button class="w3-btn" onclick="plusDivs(1)"><b style="font-family: vazir">بعدی ❯</b></button>-->
+        <!--</div>-->
+        <button class="w3-btn demo" onclick="currentDiv(1)"><b style="font-family: vazir_bold">۱</b></button>
+        <button class="w3-btn demo" onclick="currentDiv(2)"><b style="font-family: vazir_bold">۲</b></button>
+        <button class="w3-btn demo" onclick="currentDiv(3)"><b style="font-family: vazir_bold">۳</b></button>
+    </div>
+
+    <div class="w3-content" style="max-width:100%">
+        <a href="http://aichallenge.sharif.edu:2018/">
+            <img class="mySlides" src="sharif_ai.jpg" style="width:100%"></a>
+        <a href="https://scgu.ir/1396/10/27/مسابقه">
+            <img class="mySlides" src="teachMatch.jpg" style="width:100%"></a>
+        <a href="https://goo.gl/5nvi8k">
+            <img class="mySlides" src="harf_hesab.jpg" style="width:100%"></a>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("w3-red");
+            }
+            x[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].classList.add("w3-red");
+        }
+    </script>
+
+    <p class="paHead" id="intro">
+        معرفی
+    </p>
+    <p class="pa">
+        انجمن علمی دانشجویی علوم و مهندسی کامپیوتر، یکی از نهادهای دانشجویی زیرمجموعه دانشگاه گلستان و متعلق به دانشجویان رشته های
+        علوم و مهندسی کامپیوتر این دانشگاه می باشد و هدف از تاسیس آن، مدیریت فعالیت های دانشجویان در امور تحصیلی و
+        پژوهشی حوزه ی علوم و فناوری کامپیوتر است.
+    </p>
+    <p class="pa">
+        این وب سایت دربرگیرنده تازه ترین اخبار، رویدادها و دیگر مطالب مرتبط با این انجمن می باشد و توسعه ی آن با مشارکت
+        اعضای انجمن صورت گرفته است.
+    </p>
+    <p class="paHead" id="az">اعضاء</p>
+    <p class="pa">
+        همه ی دانشجویان علوم و مهندسی کامپیوتر دانشگاه، اعضای این انجمن هستند و مشارکت و همکاری آن ها به واسطه این انجمن،
+        باعث پیشرفت و تجربه بهتر از محیط دانشگاه می شود. با این حال اعضای اصلی انجمن که بر اساس انتخابات صورت
+        گرفته توسط واحد امور فرهنگی دانشگاه، مطابق با اسامی ذیل می باشد:
+    </p>
+    <p class="pa" style="color: #0a457f">
+        دانشکده فنی مهندسی گرگان> مهندسی کامپیوتر
+    </p>
+    <p class="pa">
+        مسلم آخوندی، امیرحسن واحدی، محمدباقر عباسی، محمد توسلیان، سعید منصوریان
+    </p>
+    <p class="pa" style="color: #0a457f">
+        دانشکده فنی مهندسی فاضل آباد> مهندسی کامپیوتر
+    </p>
+    <p class="pa">
+    </p>
+    <p class="pa" style="color: #0a457f">
+        دانشکده علوم پایه> علوم کامپیوتر
+    </p>
+    <p class="pa">
+    </p>
+    <p id="insta" class="paHead" style="font-family: FiraCode-Light;font-weight: bold">
+        Instagram
+    </p>
+    <p class="pa">
+        جدیدترین عکس ها و فیلم های فعالیت های ما را در صفحه ی اینستاگرام انجمن، دنبال کنید.
+    </p>
+    <a href="https://www.instagram.com/computercs" style="text-decoration: none;"><p class="pa" style="color:#0a457f;font-family: FiraCode-Light;font-weight: bold ;text-align: left">Instagram Page: https://instagram.com/computercs</p></a>
+    <p id="git" class="paHead" style="font-family: FiraCode-Light;font-weight: bold">
+        Git
+    </p>
+    <p class="pa">
+        سورس کد این وب سایت در <b style="font-family: FiraCode-Light">Github</b> قرار گرفته است و همچنین می توانید با عضویت در سایت <b style="font-family: FiraCode-Light">gitlab.com</b> و گروه <b style="font-family: FiraCode-Light">computercs_website</b> از توسعه دهندگان این وب سایت باشید.
+    </p>
+
+    <a href="https://github.com" style="text-decoration: none;"><p class="pa" style="color:#0a457f;font-family: FiraCode-Light;font-weight: bold ;text-align: left">Github Website</p></a>
+    <a href="https://github.com/computer-cs/computercs.ir" style="text-decoration: none;"><p class="pa" style="color:#0a457f;font-family: FiraCode-Light;font-weight: bold ;text-align: left">Github repository</p></a>
+    <a href="https://gitlab.com" style="text-decoration: none;"><p class="pa" style="color:#0a457f;font-family: FiraCode-Light;font-weight: bold ;text-align: left">Gitlab Website</p></a>
+    <a style="text-decoration: none;"><p class="pa" style="color:#0a457f;font-family: FiraCode-Light;font-weight: bold ;text-align: left">Gitlab Group Name: computercs_website</p></a>
+    <!--<p class="paHead">لینک</p>-->
+    <!--<a href="http://gu.ac.ir" style="text-decoration: none;"><p class="pa" style="color:#0a457f ">دانشگاه گلستان</p></a>-->
+    <!--<a href="http://gu.ac.ir" style="text-decoration: none;"><p class="pa" style="color:#0a457f ">وزارت علوم، تحقیقات و فناوری</p></a>-->
+    <p class="paHead" id="connect">ارتباط با ما</p>
+    <p class="pa" style="color: #0a457f;text-align: left;font-family: FiraCode-Light;font-weight: bold">Email: computer-cs@outlook.com</p>
+    <a href="https://t.me/computeral" style="text-decoration: none;"><p class="pa" style="color:#0a457f;font-family: FiraCode-Light;font-weight: bold ;text-align: left;padding-bottom:5vw">Telegram Channel: @computeral</p></a>
+</div>
+</body>
+</html>
